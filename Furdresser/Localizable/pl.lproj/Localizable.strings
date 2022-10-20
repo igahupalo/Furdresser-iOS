@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Furdresser
+
+  Created by Iga Hupalo on 01/06/2021.
+  
+*/
+
+"kg" = "kg";
+"year" = "rok";
+"years.5" = "roku";
+"years<5" = "lata";
+"years0,5<=" = "lat";
+"cancel-appointment" = "Odwołaj wizytę";
+"yes" = "Tak";
+"no" = "Nie";
+"ok" = "OK";
+"cancel" = "Anuluj";
+"will-be-ready-in" = "Gotowy do odbioru za ...";
+"is-ready" = "Gotowy do odbioru";
+"provide-time" = "Wprowadź czas";
+"minutes" = "Minuty";
+"ready-message" = "%@ jest gotowy do odbioru.";
+"will-be-ready-message" = "%@ będzie gotowy/a do odbioru za %@ min";
+"all" = "Wszystkie";
+"mine" = "Moje";
+
+"incorrect-email-password" = "Niepoprawny adres email lub hasło";
+"empty-password" = "Hasło nie może być puste";
+"empty-email" = "Adres email nie może być pusty";
+"invalid-email" = "Adres email jest niepoprawny";
+"email" = "Email";
+"password" = "Hasło";

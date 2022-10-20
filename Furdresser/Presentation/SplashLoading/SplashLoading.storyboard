@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Loading View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashLoading" id="Y6W-OH-hqX" customClass="SplashLoadingViewController" customModule="Furdresser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="3sT-OS-fCW">
+                                <rect key="frame" x="188.5" y="640" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Lcj-bx-zBc">
+                                <rect key="frame" x="75" y="316" width="264" height="264"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="PrimaryDark"/>
+                        <constraints>
+                            <constraint firstItem="Lcj-bx-zBc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="9A8-G4-37E"/>
+                            <constraint firstItem="3sT-OS-fCW" firstAttribute="top" secondItem="Lcj-bx-zBc" secondAttribute="bottom" constant="60" id="hJo-oL-q21"/>
+                            <constraint firstItem="Lcj-bx-zBc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qlY-R7-tof"/>
+                            <constraint firstItem="3sT-OS-fCW" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="u40-VY-a6A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="4ZO-MD-BJH" kind="show" identifier="GroomerTabBar" id="3Bo-PQ-CaD"/>
+                        <segue destination="9Km-W3-yQJ" kind="show" identifier="Start" id="Frd-vc-8ei"/>
+                        <segue destination="v9k-81-Zxe" kind="show" identifier="ManagerTabBar" id="L3o-ms-K9D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="54"/>
+        </scene>
+        <!--GroomerTabBar-->
+        <scene sceneID="Ub6-QR-7tU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GroomerTabBar" id="4ZO-MD-BJH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="huL-2L-rJV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWR-P6-8fh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="54"/>
+        </scene>
+        <!--ManagerTabBar-->
+        <scene sceneID="7ri-Zy-Ygs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ManagerTabBar" id="v9k-81-Zxe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cUV-i6-dGK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlt-na-evS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="260"/>
+        </scene>
+        <!--Start-->
+        <scene sceneID="iKx-x4-JI7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Start" id="9Km-W3-yQJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="66F-3N-zAd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwL-er-3nB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="-252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DogLogo" width="264" height="264"/>
+        <namedColor name="PrimaryDark">
+            <color red="0.31372549019607843" green="0.1803921568627451" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

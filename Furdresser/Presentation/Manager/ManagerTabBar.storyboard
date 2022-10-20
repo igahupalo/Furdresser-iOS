@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8j3-2E-HaH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Work hours-->
+        <scene sceneID="J7r-FH-2Qw">
+            <objects>
+                <viewController id="lDG-um-wY1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7m2-pP-CQX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="68b-gp-Zom"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Work hours" image="clock" catalog="system" selectedImage="clock.fill" id="sOT-UI-snr">
+                        <color key="badgeColor" name="Primary"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7O-WN-4hz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="461"/>
+        </scene>
+        <!--Packages-->
+        <scene sceneID="uOE-KK-jJz">
+            <objects>
+                <viewController id="CFy-aw-0Hr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="voe-jr-7Ww">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aVs-YK-UDx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Packages" image="shippingbox" catalog="system" selectedImage="shippingbox.fill" id="PIY-qX-TBX">
+                        <color key="badgeColor" name="Primary"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIG-9S-Yme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="445"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="auu-Ip-N74">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="rG3-hE-77D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="gearshape.2" catalog="system" selectedImage="gearshape.2.fill" id="R8V-Sf-rnV">
+                        <color key="badgeColor" name="Primary"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVv-sy-AW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798" y="129"/>
+        </scene>
+        <!--Groomers-->
+        <scene sceneID="igh-Y3-SWW">
+            <objects>
+                <viewController id="ede-tB-tfq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8E4-UT-bg3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="78z-ca-L9V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Groomers" image="person.2" catalog="system" selectedImage="person.2.fill" id="kGM-ys-NVf">
+                        <color key="badgeColor" name="Primary"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXo-TF-2sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139" y="445"/>
+        </scene>
+        <!--Manager Tab Bar View Controller-->
+        <scene sceneID="7tl-wh-ALo">
+            <objects>
+                <tabBarController storyboardIdentifier="ManagerTabBarViewController" modalPresentationStyle="fullScreen" id="8j3-2E-HaH" customClass="ManagerTabBarViewController" customModule="Furdresser" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3OW-DO-dEx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Primary"/>
+                        <color key="selectedImageTintColor" name="Primary"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XC9-Za-Mta" kind="relationship" relationship="viewControllers" id="dTG-vT-DWR"/>
+                        <segue destination="lDG-um-wY1" kind="relationship" relationship="viewControllers" id="n9m-lL-bVV"/>
+                        <segue destination="CFy-aw-0Hr" kind="relationship" relationship="viewControllers" id="Ync-RA-A6M"/>
+                        <segue destination="ede-tB-tfq" kind="relationship" relationship="viewControllers" id="xQm-zb-rCO"/>
+                        <segue destination="rG3-hE-77D" kind="relationship" relationship="viewControllers" id="U86-U4-YaC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9v-bY-diE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="-327"/>
+        </scene>
+        <!--Appointments-->
+        <scene sceneID="6Du-Iz-ceZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Appointments" id="XC9-Za-Mta" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" selectedImage="calendar" id="8xq-Sq-rs9">
+                        <color key="badgeColor" name="Primary"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhy-7M-uu7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-664" y="153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="gearshape.2" catalog="system" width="128" height="100"/>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="shippingbox" catalog="system" width="128" height="124"/>
+        <image name="shippingbox.fill" catalog="system" width="128" height="124"/>
+        <namedColor name="Primary">
+            <color red="0.50196078431372548" green="0.29411764705882354" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

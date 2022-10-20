@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>969767344243-32aja2uakjn4n3t3cr8baien9gfkonoo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.969767344243-32aja2uakjn4n3t3cr8baien9gfkonoo</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>969767344243-77csj3fivjti43f41bi5llvnvnbijol2.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA-cgrTpGxe8_isSav4dvJ1VWQZmU15KX4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>969767344243</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>one.igahupalo.Furdresser</string>
+	<key>PROJECT_ID</key>
+	<string>furdresser-3e09b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>furdresser-3e09b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:969767344243:ios:76f9b754694d76b964b206</string>
+</dict>
+</plist>

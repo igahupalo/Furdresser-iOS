@@ -1,0 +1,6 @@
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Pvt-dW-Nc2"; */
+"Pvt-dW-Nc2.title" = "Ustawienia";
+
+/* Class = "UIButton"; normalTitle = "Log out"; ObjectID = "bMP-gl-Eq3"; */
+"bMP-gl-Eq3.normalTitle" = "Wyloguj się";

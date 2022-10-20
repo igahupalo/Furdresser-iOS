@@ -1,0 +1,12 @@
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Pvt-dW-Nc2"; */
+"Pvt-dW-Nc2.title" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Log out"; ObjectID = "bMP-gl-Eq3"; */
+"bMP-gl-Eq3.normalTitle" = "Log out";
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "n9c-7t-i9F"; */
+"n9c-7t-i9F.title" = "History";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "wu5-GE-cDI"; */
+"wu5-GE-cDI.title" = "Item";

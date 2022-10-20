@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-BlackItalic.ttf">
+            <string>Nunito-BlackItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Start" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="StartViewController" customModule="Furdresser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0Lz-0Q-bYy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FurDresser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-rz-q6D">
+                                <rect key="frame" x="65.333333333333343" y="194" width="283.66666666666663" height="67.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Nunito-BlackItalic" family="Nunito" pointSize="58"/>
+                                <color key="textColor" name="Primary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOU-Oa-GPb">
+                                <rect key="frame" x="304" y="752" width="70" height="70"/>
+                                <color key="backgroundColor" name="Primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="OGP-Py-WrU"/>
+                                    <constraint firstAttribute="height" constant="70" id="jbZ-y0-Fxb"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8f8-qn-Iw4" kind="show" id="HHl-X9-aPF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ffl-rz-q6D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88i-Gx-BFZ"/>
+                            <constraint firstItem="ffl-rz-q6D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="9vs-ZB-v5z"/>
+                            <constraint firstItem="0Lz-0Q-bYy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bel-ra-dg9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qOU-Oa-GPb" secondAttribute="bottom" constant="40" id="D5C-AI-Gsf"/>
+                            <constraint firstItem="0Lz-0Q-bYy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="La5-kb-kxO"/>
+                            <constraint firstAttribute="trailing" secondItem="0Lz-0Q-bYy" secondAttribute="trailing" id="c6k-A8-YZP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qOU-Oa-GPb" secondAttribute="trailing" constant="40" id="fAQ-aS-sWv"/>
+                            <constraint firstAttribute="bottom" secondItem="0Lz-0Q-bYy" secondAttribute="bottom" id="x1I-pW-g4S"/>
+                            <constraint firstItem="0Lz-0Q-bYy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yiz-PC-0Hh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MQm-5p-M4d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="118.52678571428571"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Jwo-j0-oM2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="8f8-qn-Iw4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RR4-7X-7Gb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Oq-GD-CRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="119"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Primary"/>
+    <resources>
+        <image name="Image" width="616.66668701171875" height="926"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <namedColor name="Primary">
+            <color red="0.50196078431372548" green="0.29411764705882354" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

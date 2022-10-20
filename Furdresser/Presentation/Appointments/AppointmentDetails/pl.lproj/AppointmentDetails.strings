@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Package"; ObjectID = "19X-Ck-lFR"; */
+"19X-Ck-lFR.text" = "Pakiet";
+
+/* Class = "UILabel"; text = "2nd March"; ObjectID = "FI0-W8-yeR"; */
+"FI0-W8-yeR.text" = "";
+
+/* Class = "UIButton"; normalTitle = "Cancel the visit"; ObjectID = "QlS-T9-buU"; */
+"QlS-T9-buU.normalTitle" = "Odwołaj wizytę";
+
+/* Class = "UILabel"; text = "9:30 - 10:30"; ObjectID = "ROd-ly-P5S"; */
+"ROd-ly-P5S.text" = "";
+
+/* Class = "UILabel"; text = "8 kg"; ObjectID = "Vei-tf-4Cb"; */
+"Vei-tf-4Cb.text" = "";
+
+/* Class = "UIButton"; normalTitle = "Call the owner"; ObjectID = "ZdR-NY-x5B"; */
+"ZdR-NY-x5B.normalTitle" = "Zadzwoń do właściciela";
+
+/* Class = "UILabel"; text = "Medium Poodle"; ObjectID = "jmm-DB-2nh"; */
+"jmm-DB-2nh.text" = "";
+
+/* Class = "UILabel"; text = "9 months"; ObjectID = "n92-xV-8La"; */
+"n92-xV-8La.text" = "";
+
+/* Class = "UILabel"; text = "Boris"; ObjectID = "nit-4m-NjZ"; */
+"nit-4m-NjZ.text" = "";
+
+/* Class = "UILabel"; text = "Reference Photos"; ObjectID = "nkG-Dk-SgV"; */
+"nkG-Dk-SgV.text" = "Zdjęcia referencyjne";
+
+/* Class = "UIButton"; normalTitle = "Bath"; ObjectID = "q4b-nC-vAS"; */
+"q4b-nC-vAS.normalTitle" = "";
+
+/* Class = "UILabel"; text = "Clean Paws"; ObjectID = "qg3-D8-FJW"; */
+"qg3-D8-FJW.text" = "";
+
+/* Class = "UILabel"; text = "Notes"; ObjectID = "rEd-tA-hg4"; */
+"rEd-tA-hg4.text" = "Notatki";
+
+/* Class = "UIButton"; normalTitle = "Send a notification"; ObjectID = "wKS-dW-eoU"; */
+"wKS-dW-eoU.normalTitle" = "Wyślij wiadomość";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."; ObjectID = "xXK-ey-6iE"; */
+"xXK-ey-6iE.text" = "";

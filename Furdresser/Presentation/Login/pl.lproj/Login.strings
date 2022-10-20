@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "gm6-uE-UTv"; */
+"gm6-uE-UTv.text" = "Zaloguj się";
+
+/* Class = "UIButton"; normalTitle = "Forgot password?"; ObjectID = "nAY-XC-WY9"; */
+"nAY-XC-WY9.normalTitle" = "Nie pamiętasz hasła?";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "rdF-Gt-jBf"; */
+"rdF-Gt-jBf.normalTitle" = "Zaloguj się";
