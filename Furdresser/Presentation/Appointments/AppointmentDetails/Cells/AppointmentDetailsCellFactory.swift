@@ -18,8 +18,8 @@ protocol AppointmentDetailsCellFactoryProtocol {
 class AppointmentDetailsCellFactory: AppointmentDetailsCellFactoryProtocol {
 
     private let tableView: UITableView
-    let taskDelegate: TaskDelegate
-    let overviewDelegate: OverviewDelegate
+    weak var taskDelegate: TaskDelegate?
+    weak var overviewDelegate: OverviewDelegate?
 
     var viewModel: AppointmentDetailsScene.FetchAppointmentDetails.ViewModel?
 

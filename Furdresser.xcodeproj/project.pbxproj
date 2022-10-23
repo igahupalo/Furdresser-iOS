@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027006F7B4A88B8BE168E457 /* libPods-FurdresserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA67B75E530AD93375F7367C /* libPods-FurdresserUITests.a */; };
 		422C3ACB264306C200CD5765 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3ACA264306C200CD5765 /* RoundedView.swift */; };
 		422C3AD92651731A00CD5765 /* AppointmentDetailsCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3AD82651731A00CD5765 /* AppointmentDetailsCellFactory.swift */; };
 		422C3ADB265175EF00CD5765 /* OverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3ADA265175EF00CD5765 /* OverviewTableViewCell.swift */; };
@@ -119,30 +118,10 @@
 		42D2ECB526276D2300BE9C93 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D2ECB326276D2300BE9C93 /* Start.storyboard */; };
 		42D2ECB726276D2900BE9C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D2ECB626276D2900BE9C93 /* Assets.xcassets */; };
 		42D2ECBA26276D2900BE9C93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D2ECB826276D2900BE9C93 /* LaunchScreen.storyboard */; };
-		42D2ECC526276D2900BE9C93 /* FurdresserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D2ECC426276D2900BE9C93 /* FurdresserTests.swift */; };
-		42D2ECD026276D2A00BE9C93 /* FurdresserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D2ECCF26276D2A00BE9C93 /* FurdresserUITests.swift */; };
 		42EEAE9926718B2A00829DCF /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EEAE9B26718B2A00829DCF /* Settings.storyboard */; };
 		42F44726266C1354009D9A7D /* ManagerTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F44725266C1354009D9A7D /* ManagerTabBar.storyboard */; };
-		5BD4B47328E0DB8A16956365 /* libPods-FurdresserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC15F193057E21B744F7C02 /* libPods-FurdresserTests.a */; };
 		C8C746818A80DC4A420EEF24 /* Pods_Furdresser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231768995CD7BA154FA8276D /* Pods_Furdresser.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		42D2ECC126276D2900BE9C93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42D2ECA226276D2300BE9C93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42D2ECA926276D2300BE9C93;
-			remoteInfo = Furdresser;
-		};
-		42D2ECCC26276D2A00BE9C93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42D2ECA226276D2300BE9C93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42D2ECA926276D2300BE9C93;
-			remoteInfo = Furdresser;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03DFB0D0481E848F415C9780 /* Pods-Furdresser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Furdresser.debug.xcconfig"; path = "Target Support Files/Pods-Furdresser/Pods-Furdresser.debug.xcconfig"; sourceTree = "<group>"; };
@@ -268,12 +247,6 @@
 		42D2ECB626276D2900BE9C93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D2ECB926276D2900BE9C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42D2ECBB26276D2900BE9C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42D2ECC026276D2900BE9C93 /* FurdresserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurdresserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D2ECC426276D2900BE9C93 /* FurdresserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurdresserTests.swift; sourceTree = "<group>"; };
-		42D2ECC626276D2900BE9C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42D2ECCB26276D2A00BE9C93 /* FurdresserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurdresserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D2ECCF26276D2A00BE9C93 /* FurdresserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurdresserUITests.swift; sourceTree = "<group>"; };
-		42D2ECD126276D2A00BE9C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42EEAE9A26718B2A00829DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		42EEAE9D26718B2D00829DCF /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Settings.strings; sourceTree = "<group>"; };
 		42F44725266C1354009D9A7D /* ManagerTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerTabBar.storyboard; sourceTree = "<group>"; };
@@ -292,22 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C746818A80DC4A420EEF24 /* Pods_Furdresser.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D2ECBD26276D2900BE9C93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BD4B47328E0DB8A16956365 /* libPods-FurdresserTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D2ECC826276D2A00BE9C93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				027006F7B4A88B8BE168E457 /* libPods-FurdresserUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,8 +566,6 @@
 			isa = PBXGroup;
 			children = (
 				42D2ECAC26276D2300BE9C93 /* Furdresser */,
-				42D2ECC326276D2900BE9C93 /* FurdresserTests */,
-				42D2ECCE26276D2A00BE9C93 /* FurdresserUITests */,
 				42D2ECAB26276D2300BE9C93 /* Products */,
 				B1631D2212C7FC583012DA1C /* Pods */,
 				2B6F79A2B37975A1ECE1B54E /* Frameworks */,
@@ -621,8 +576,6 @@
 			isa = PBXGroup;
 			children = (
 				42D2ECAA26276D2300BE9C93 /* Furdresser.app */,
-				42D2ECC026276D2900BE9C93 /* FurdresserTests.xctest */,
-				42D2ECCB26276D2A00BE9C93 /* FurdresserUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -641,24 +594,6 @@
 				423724352639E7FC00164970 /* Resources */,
 			);
 			path = Furdresser;
-			sourceTree = "<group>";
-		};
-		42D2ECC326276D2900BE9C93 /* FurdresserTests */ = {
-			isa = PBXGroup;
-			children = (
-				42D2ECC426276D2900BE9C93 /* FurdresserTests.swift */,
-				42D2ECC626276D2900BE9C93 /* Info.plist */,
-			);
-			path = FurdresserTests;
-			sourceTree = "<group>";
-		};
-		42D2ECCE26276D2A00BE9C93 /* FurdresserUITests */ = {
-			isa = PBXGroup;
-			children = (
-				42D2ECCF26276D2A00BE9C93 /* FurdresserUITests.swift */,
-				42D2ECD126276D2A00BE9C93 /* Info.plist */,
-			);
-			path = FurdresserUITests;
 			sourceTree = "<group>";
 		};
 		B1631D2212C7FC583012DA1C /* Pods */ = {
@@ -698,44 +633,6 @@
 			productReference = 42D2ECAA26276D2300BE9C93 /* Furdresser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42D2ECBF26276D2900BE9C93 /* FurdresserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42D2ECD726276D2A00BE9C93 /* Build configuration list for PBXNativeTarget "FurdresserTests" */;
-			buildPhases = (
-				6F583390BB0560B58BD32489 /* [CP] Check Pods Manifest.lock */,
-				42D2ECBC26276D2900BE9C93 /* Sources */,
-				42D2ECBD26276D2900BE9C93 /* Frameworks */,
-				42D2ECBE26276D2900BE9C93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42D2ECC226276D2900BE9C93 /* PBXTargetDependency */,
-			);
-			name = FurdresserTests;
-			productName = FurdresserTests;
-			productReference = 42D2ECC026276D2900BE9C93 /* FurdresserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		42D2ECCA26276D2A00BE9C93 /* FurdresserUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42D2ECDA26276D2A00BE9C93 /* Build configuration list for PBXNativeTarget "FurdresserUITests" */;
-			buildPhases = (
-				DCABF445CC1310A8FEC26432 /* [CP] Check Pods Manifest.lock */,
-				42D2ECC726276D2A00BE9C93 /* Sources */,
-				42D2ECC826276D2A00BE9C93 /* Frameworks */,
-				42D2ECC926276D2A00BE9C93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42D2ECCD26276D2A00BE9C93 /* PBXTargetDependency */,
-			);
-			name = FurdresserUITests;
-			productName = FurdresserUITests;
-			productReference = 42D2ECCB26276D2A00BE9C93 /* FurdresserUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -747,14 +644,6 @@
 				TargetAttributes = {
 					42D2ECA926276D2300BE9C93 = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					42D2ECBF26276D2900BE9C93 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 42D2ECA926276D2300BE9C93;
-					};
-					42D2ECCA26276D2A00BE9C93 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 42D2ECA926276D2300BE9C93;
 					};
 				};
 			};
@@ -773,8 +662,6 @@
 			projectRoot = "";
 			targets = (
 				42D2ECA926276D2300BE9C93 /* Furdresser */,
-				42D2ECBF26276D2900BE9C93 /* FurdresserTests */,
-				42D2ECCA26276D2A00BE9C93 /* FurdresserUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -815,45 +702,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42D2ECBE26276D2900BE9C93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D2ECC926276D2A00BE9C93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6F583390BB0560B58BD32489 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FurdresserTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		77DD68C745E1DD24742526AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -887,28 +738,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Furdresser-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCABF445CC1310A8FEC26432 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FurdresserUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1010,36 +839,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42D2ECBC26276D2900BE9C93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42D2ECC526276D2900BE9C93 /* FurdresserTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D2ECC726276D2A00BE9C93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42D2ECD026276D2A00BE9C93 /* FurdresserUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42D2ECC226276D2900BE9C93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42D2ECA926276D2300BE9C93 /* Furdresser */;
-			targetProxy = 42D2ECC126276D2900BE9C93 /* PBXContainerItemProxy */;
-		};
-		42D2ECCD26276D2A00BE9C93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42D2ECA926276D2300BE9C93 /* Furdresser */;
-			targetProxy = 42D2ECCC26276D2A00BE9C93 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42CF151F26667CD100DE0D9A /* Localizable.strings */ = {
@@ -1279,94 +1079,6 @@
 			};
 			name = Release;
 		};
-		42D2ECD826276D2A00BE9C93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE9CFEA48DF96B6070196EB0 /* Pods-FurdresserTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H77979Y8DF;
-				INFOPLIST_FILE = FurdresserTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.igahupalo.FurdresserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furdresser.app/Furdresser";
-			};
-			name = Debug;
-		};
-		42D2ECD926276D2A00BE9C93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C777C69C3C277FFFE1A637B /* Pods-FurdresserTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H77979Y8DF;
-				INFOPLIST_FILE = FurdresserTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.igahupalo.FurdresserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furdresser.app/Furdresser";
-			};
-			name = Release;
-		};
-		42D2ECDB26276D2A00BE9C93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 846199CA20CDAF5CDB92D0E6 /* Pods-FurdresserUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H77979Y8DF;
-				INFOPLIST_FILE = FurdresserUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.igahupalo.FurdresserUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Furdresser;
-			};
-			name = Debug;
-		};
-		42D2ECDC26276D2A00BE9C93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F4CB37DA42A13D40307A9F1 /* Pods-FurdresserUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H77979Y8DF;
-				INFOPLIST_FILE = FurdresserUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = one.igahupalo.FurdresserUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Furdresser;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1384,24 +1096,6 @@
 			buildConfigurations = (
 				42D2ECD526276D2A00BE9C93 /* Debug */,
 				42D2ECD626276D2A00BE9C93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42D2ECD726276D2A00BE9C93 /* Build configuration list for PBXNativeTarget "FurdresserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42D2ECD826276D2A00BE9C93 /* Debug */,
-				42D2ECD926276D2A00BE9C93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42D2ECDA26276D2A00BE9C93 /* Build configuration list for PBXNativeTarget "FurdresserUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42D2ECDB26276D2A00BE9C93 /* Debug */,
-				42D2ECDC26276D2A00BE9C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

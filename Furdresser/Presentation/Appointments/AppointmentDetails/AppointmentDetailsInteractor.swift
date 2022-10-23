@@ -33,7 +33,8 @@ protocol AppointmentDetailsDataDestination {
 class AppointmentDetailsInteractor: AppointmentDetailsInteractorInput, AppointmentDetailsDataSource, AppointmentDetailsDataDestination {
     
     var output: AppointmentDetailsInteractorOutput?
-    var appointment: Appointment?
+    weak var appointment: Appointment?
+    var appointmentDetails: AppointmentDetails?
     
     // MARK: Business logic
     
@@ -43,8 +44,8 @@ class AppointmentDetailsInteractor: AppointmentDetailsInteractorInput, Appointme
             appointmentsWorker.fetchAppointmentDetails(appointmentId: appointmentId) { [weak self] appointmentsDetails in
                 if let appointmentsDetails = appointmentsDetails,
                    let appointment = self?.appointment {
-                    appointment.setDetails(details: appointmentsDetails)
-                    let response = AppointmentDetailsScene.FetchAppointmentDetails.Response(appointment: appointment)
+                    self?.appointmentDetails = appointmentsDetails
+                    let response = AppointmentDetailsScene.FetchAppointmentDetails.Response(appointment: appointment, appointmentDetails: appointmentsDetails)
                     self?.output?.presentFetchedAppointment(response: response)
                 }
             }
@@ -53,7 +54,7 @@ class AppointmentDetailsInteractor: AppointmentDetailsInteractorInput, Appointme
 
     func toggleTask(request: AppointmentDetailsScene.ToggleTask.Request) {
         let appointmentsWorker = AppointmentsWorker()
-        if let task = appointment?.package?.tasks[request.index],
+        if let task = appointmentDetails?.package?.tasks[request.index],
            let taskId = task.id,
         let appointmentId = appointment?.id {
             let isCompleted = !(task.isCompleted)
@@ -68,14 +69,14 @@ class AppointmentDetailsInteractor: AppointmentDetailsInteractorInput, Appointme
     }
 
     func makeCall() {
-        if let phoneNumber = appointment?.phoneNumber {
+        if let phoneNumber = appointmentDetails?.phoneNumber {
             let response = AppointmentDetailsScene.MakeCall.Response(phoneNumber: phoneNumber)
             output?.makeCall(response: response)
         }
     }
 
     func sendMessage(request: AppointmentDetailsScene.SendMessage.Request) {
-        if let phoneNumber = appointment?.phoneNumber,
+        if let phoneNumber = appointmentDetails?.phoneNumber,
            let petName = appointment?.name {
             let response = AppointmentDetailsScene.SendMessage.Response(petName: petName,
                                                                         phoneNumber: phoneNumber,
@@ -87,14 +88,6 @@ class AppointmentDetailsInteractor: AppointmentDetailsInteractorInput, Appointme
     }
 
     func cancelAppointment() {
-        let appointmentsWorker = AppointmentsWorker()
-        if let appointmentId = appointment?.id,
-           let workerId = appointment?.workerId {
-            appointmentsWorker.setAppointmentIsActive(appointmentId: appointmentId, workerId: workerId, isActive: false) { [weak self] isSuccessful in
-                if isSuccessful {
-                    self?.output?.closeAppointmentDetails()
-                }
-            }
-        }
+        // TODO: Deleting appointment
     }
 }

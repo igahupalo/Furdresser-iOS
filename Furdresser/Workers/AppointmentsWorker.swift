@@ -43,7 +43,6 @@ class AppointmentsWorker {
                 let data = document.data()
                 if let appointment = self?.mapDataToAppointment(data: data) {
                     appointment.id = document.documentID
-                    appointment.workerId = uid
                     if let imageUrl = data["image_url"] as? String {
                         dispatchGroup.enter()
                         self?.fetchAppointmentImage(imageUrl: imageUrl) { image in
@@ -93,33 +92,6 @@ class AppointmentsWorker {
                     }
                 }
             }
-            dispatchGroup.notify(queue: .main) {
-                // TODO: Extract this
-                let workerRefs = Array(Set(appointments.compactMap { $0.workerRef }))
-                let workerDispatchGroup = DispatchGroup()
-                workerRefs.forEach { ref in
-                    workerDispatchGroup.enter()
-                    ref.getDocument { documentSnapshot, error in
-                        guard error == nil, let document = documentSnapshot else {
-                            print("Failed to fetch worker.")
-                            return
-                        }
-                        // TODO Fix dis
-                        if let data = document.data() {
-                            appointments.forEach { appointment in
-                                if appointment.workerRef == ref {
-                                    appointment.workerName = ((data["name"] as! String?) ?? "") + " " + ((data["surname"] as! String?) ?? "")
-                                    appointment.workerColor = UIColor(hex: (data["color"] as! String?) ?? "")
-                                }
-                            }
-                            workerDispatchGroup.leave()
-                        }
-                    }
-                }
-                workerDispatchGroup.notify(queue: .main) {
-                    completionHandler(appointments)
-                }
-            }
         }
     }
 
@@ -150,7 +122,7 @@ class AppointmentsWorker {
 
             if let data = document.data() {
                 var appointmentDetails = self.mapDataToAppointmentDetails(data: data)
-                self.fetchTasks(ref: ref.collection("Tasks")) { tasks in
+                self.fetchTasks(ref: data["package_ref"] as? DocumentReference) { tasks in
                     let packageName = data["package"] as! String?
                     appointmentDetails.package = Package(name: packageName, tasks: tasks ?? [])
                     completionHandler(appointmentDetails)
@@ -159,6 +131,7 @@ class AppointmentsWorker {
         }
     }
 
+    // TODO: Temporarly task completion isn't stored in database.
     func setTaskIsCompleted(appointmentId: String, taskId: String, isCompleted: Bool, completionHandler: @escaping (Bool) -> ()) {
         let db: Firestore = Firestore.firestore()
         let ref = db.collection("Salons")
@@ -169,10 +142,11 @@ class AppointmentsWorker {
             .document(taskId)
 
         ref.updateData(["is_completed": isCompleted]) { error in
-            guard error == nil else {
-                completionHandler(false)
-                return
-            }
+            // Uncomment when fixed.
+            // guard error == nil else {
+            //     completionHandler(false)
+            //     return
+            // }
             completionHandler(true)
         }
     }
@@ -229,27 +203,10 @@ private extension AppointmentsWorker {
         }
     }
 
-    //    func fetchPackage(ref: DocumentReference, completionHandler: @escaping (Package?) -> ()) {
-    //        ref.getDocument { documentSnapshot, error in
-    //                guard error == nil, let document = documentSnapshot else {
-    //                    print("Failed to fetch package.")
-    //                    return
-    //                }
-    //
-    //                if let data = document.data() {
-    //                    var package = self.mapDataToPackage(data: data)
-    //                    self.fetchTasks(ref: ref.collection("Tasks")) { tasks in
-    //                        package.tasks = tasks ?? []
-    //                        completionHandler(package)
-    //                    }
-    //                }
-    //            }
-    //    }
-
-    func fetchTasks(ref: CollectionReference, completionHandler: @escaping ([Task]?) -> ()) {
+    func fetchTasks(ref: DocumentReference?, completionHandler: @escaping ([Task]?) -> ()) {
         var tasks: [Task] = []
 
-        ref.getDocuments { documentSnapshots, error in
+        ref?.collection("Tasks").getDocuments { documentSnapshots, error in
             guard error == nil else {
                 print("Failed to fetch tasks.")
                 return
@@ -301,8 +258,7 @@ private extension AppointmentsWorker {
                            weight: weight,
                            ownerName: ownerName,
                            startDate: startDate,
-                           endDate: endDate,
-                           workerRef: workerRef)
+                           endDate: endDate)
     }
 
     func mapDataToAppointmentDetails(data: [String: Any]) -> AppointmentDetails {

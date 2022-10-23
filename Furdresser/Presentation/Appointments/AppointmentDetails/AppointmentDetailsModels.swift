@@ -16,6 +16,7 @@ struct AppointmentDetailsScene {
     struct FetchAppointmentDetails {
         struct Response {
             var appointment: Appointment
+            var appointmentDetails: AppointmentDetails
         }
 
         struct ViewModel {

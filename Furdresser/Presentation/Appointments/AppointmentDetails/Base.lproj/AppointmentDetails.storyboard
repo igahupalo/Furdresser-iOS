@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ddV-dU-ttr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ddV-dU-ttr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,11 +32,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HAQ-8F-DwX">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OverviewTableViewCell" id="scs-kL-TTn" customClass="OverviewTableViewCell" customModule="Furdresser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="549.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="549.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="scs-kL-TTn" id="UDU-2v-uaf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="549.5"/>
@@ -272,8 +273,8 @@
                                             <outlet property="weightLabel" destination="Vei-tf-4Cb" id="9GB-Yx-8gA"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PackageTableViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="yze-76-VPK" userLabel="PackageTableViewCell" customClass="PackageTableViewCell" customModule="Furdresser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="574" width="414" height="100.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PackageTableViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="yze-76-VPK" userLabel="PackageTableViewCell" customClass="PackageTableViewCell" customModule="Furdresser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="599.5" width="414" height="100.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yze-76-VPK" id="1KH-9t-T9b">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
@@ -309,14 +310,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableViewCell" id="5CW-Wu-4ir" customClass="TaskTableViewCell" customModule="Furdresser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="674.5" width="414" height="35.5"/>
+                                        <rect key="frame" x="0.0" y="700" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5CW-Wu-4ir" id="aXq-Gl-gvx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="35.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4b-nC-vAS" customClass="ImageToggleButton" customModule="Furdresser" customModuleProvider="target">
-                                                    <rect key="frame" x="24" y="5" width="366" height="25.5"/>
+                                                    <rect key="frame" x="24" y="5" width="366" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Bath">
@@ -325,12 +326,6 @@
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="black"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="image" keyPath="onImage">
-                                                            <imageReference key="value" image="record.circle" catalog="system" symbolScale="large"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="image" keyPath="offImage">
-                                                            <imageReference key="value" image="circle" catalog="system" symbolScale="large"/>
-                                                        </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="type">
                                                             <integer key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
@@ -352,7 +347,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotesTableViewCell" id="jCo-41-dEA" customClass="NotesTableViewCell" customModule="Furdresser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="710" width="414" height="206"/>
+                                        <rect key="frame" x="0.0" y="737.5" width="414" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jCo-41-dEA" id="9j4-m2-kRt">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
@@ -389,20 +384,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReferencePhotosTableViewCell" id="pkw-Gt-zTB" customClass="ReferencePhotosTableViewCell" customModule="Furdresser" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="916" width="414" height="235"/>
+                                        <rect key="frame" x="0.0" y="943.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pkw-Gt-zTB" id="3RH-wj-oMX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkG-Dk-SgV">
-                                                    <rect key="frame" x="24" y="24" width="366" height="22"/>
+                                                    <rect key="frame" x="24" y="24" width="366" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Aml-TE-pRp">
-                                                    <rect key="frame" x="0.0" y="51" width="414" height="174"/>
+                                                    <rect key="frame" x="0.0" y="29" width="414" height="5"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="174" id="hYf-Yg-BJ7"/>
@@ -415,7 +410,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="ReferencePhotoCollectionViewCell" id="ePR-c7-rCw" customClass="ReferencePhotoCollectionViewCell" customModule="Furdresser" customModuleProvider="target">
-                                                            <rect key="frame" x="24" y="10" width="104" height="152"/>
+                                                            <rect key="frame" x="24" y="-74.5" width="104" height="152"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SIe-Aj-BtZ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="104" height="152"/>
@@ -503,10 +498,9 @@
     <color key="tintColor" name="Primary"/>
     <resources>
         <image name="Image" width="444" height="667"/>
-        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
-        <image name="record.circle" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="Primary">
             <color red="0.50196078431372548" green="0.29411764705882354" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

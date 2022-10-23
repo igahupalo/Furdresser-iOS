@@ -93,6 +93,7 @@ private extension AppointmentDetailsPresenter {
 
     func mapResponseToOverview(response: Response) -> ViewModel.Overview {
         let appointment = response.appointment
+        let appointmentDetails = response.appointmentDetails
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "d MMM (E)"
         let timeFormatter = DateFormatter()
@@ -111,19 +112,19 @@ private extension AppointmentDetailsPresenter {
                                   time: timeString,
                                   weight: weightString ?? "",
                                   age: ageString ?? "",
-                                  breed: appointment.breed ?? "",
-                                  phoneNumber: appointment.phoneNumber ?? "")
+                                  breed: appointmentDetails.breed ?? "",
+                                  phoneNumber: appointmentDetails.phoneNumber ?? "")
     }
 
     func mapResponseToPackage(response: Response) -> ViewModel.Package {
-        let package = response.appointment.package
+        let package = response.appointmentDetails.package
 
         return ViewModel.Package(name: package?.name ?? "")
     }
 
     func mapResponseToTasks(response: Response) -> ViewModel.Tasks {
 
-        let tasks = mapTasksToDisplayedTasks(tasks: response.appointment.package?.tasks ?? [])
+        let tasks = mapTasksToDisplayedTasks(tasks: response.appointmentDetails.package?.tasks ?? [])
 
         return ViewModel.Tasks(tasks: tasks)
     }
@@ -133,8 +134,8 @@ private extension AppointmentDetailsPresenter {
     }
 
     func mapResponseToNotes(response: Response) -> ViewModel.Notes {
-        let appointment = response.appointment
+        let appointmentDetails = response.appointmentDetails
 
-        return ViewModel.Notes(notes: appointment.notes ?? "")
+        return ViewModel.Notes(notes: appointmentDetails.notes ?? "")
     }
 }

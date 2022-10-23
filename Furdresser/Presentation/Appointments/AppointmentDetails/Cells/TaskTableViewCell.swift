@@ -20,7 +20,7 @@ class TaskTableViewCell: UITableViewCell {
 
     func setup(viewModel: AppointmentDetailsScene.FetchAppointmentDetails.ViewModel.Tasks.DisplayedTask,
                indexPath: IndexPath,
-               delegate: TaskDelegate) {
+               delegate: TaskDelegate?) {
         self.indexPath = indexPath
         self.delegate = delegate
         inflate(with: viewModel)

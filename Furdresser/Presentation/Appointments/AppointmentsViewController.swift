@@ -62,13 +62,6 @@ class AppointmentsViewController: UIViewController, AppointmentsViewControllerIn
         userSectionHeaders = viewModel.userSectionHeaders
         userSectionedAppointments = viewModel.userSectionedAppointments
 
-        // TODO: Devide responsibility
-        if displayMode == .manager,
-           let allSectionHeaders = viewModel.allSectionHeaders,
-           let allSectionedAppointments = viewModel.allSectionedAppointments {
-            self.allSectionHeaders = allSectionHeaders
-            self.allSectionedAppointments = allSectionedAppointments
-        }
         tableView.reloadData()
 
         if tableView.refreshControl?.isRefreshing == true {

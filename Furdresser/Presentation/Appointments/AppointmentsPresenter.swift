@@ -67,7 +67,6 @@ private extension AppointmentsPresenter {
     }
 
     func mapDatesToSectionHeaders(dates: [Date]) -> [String] {
-        // TODO: Use RelativeDateFormatter for today/tomorrow
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy (EEEE)"
 
@@ -84,7 +83,7 @@ private extension AppointmentsPresenter {
     }
 
     func mapAppointmentToDisplayedAppointment(appointment: Appointment) -> AppointmentsScene.FetchAppointments.ViewModel.DisplayedAppointment {
-        // TODO: Use DateIntervalFormatter
+
         let timeFormatter = DateFormatter()
         timeFormatter.dateFormat = "HH:mm"
 
@@ -99,9 +98,6 @@ private extension AppointmentsPresenter {
                                                                               petName: appointment.name ?? "",
                                                                               ownerName: appointment.ownerName ?? "",
                                                                               weight: weightString ?? "",
-                                                                              age: ageString ?? "",
-                                                                              // TODO Get rid of dis
-                                                                              workerName: appointment.workerName,
-                                                                              workerColor: appointment.workerColor)
+                                                                              age: ageString ?? "")
     }
 }

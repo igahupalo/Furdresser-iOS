@@ -49,7 +49,7 @@ class OverviewTableViewCell: UITableViewCell {
     // MARK: Display Logic
 
     func setup(viewModel: AppointmentDetailsScene.FetchAppointmentDetails.ViewModel.Overview,
-               delegate: OverviewDelegate) {
+               delegate: OverviewDelegate?) {
         self.delegate = delegate
         inflate(with: viewModel)
     }
