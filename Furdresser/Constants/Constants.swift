@@ -8,5 +8,5 @@
 import Foundation
 
 struct Constants {
-    static let salonId = "HHRnVoiHPA90KpKpC3IS"
+    static let salonId = "3TcryRqaTkh8yiJZ78xx"
 }

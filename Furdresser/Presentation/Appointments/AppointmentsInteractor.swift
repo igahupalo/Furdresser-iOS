@@ -37,8 +37,6 @@ class AppointmentsInteractor: AppointmentsInteractorInput, AppointmentsDataSourc
 
     var selectedAppointment: Appointment?
 
-    private let numberOfDaysInAdvance = 3
-
     // MARK: Business logic
     
     func fetchAppointments() {
@@ -51,7 +49,7 @@ class AppointmentsInteractor: AppointmentsInteractorInput, AppointmentsDataSourc
 
         if let uid = user?.uid {
             dispatchGroup.enter()
-            appointmentsWorker.fetchUserAppointments(uid: uid, numberOfDaysInAdvance: numberOfDaysInAdvance) { [weak self] appointments in
+            appointmentsWorker.fetchUserAppointments(uid: uid) { [weak self] appointments in
                 if let appointments = appointments {
                     groupedUserAppointments = appointmentsWorker.groupAppointmentsByDay(appointments: appointments)
                     self?.sectionedUserAppointments = groupedUserAppointments?.map { $0.1 }

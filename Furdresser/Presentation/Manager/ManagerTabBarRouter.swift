@@ -14,11 +14,11 @@ protocol ManagerTabBarRouterInput {
     
 }
 
-protocol ManagerTabBarRouterDataSource: class {
+protocol ManagerTabBarRouterDataSource: AnyObject {
     var currentUser: User? { get }
 }
 
-protocol ManagerTabBarRouterDataDestination: class {
+protocol ManagerTabBarRouterDataDestination: AnyObject {
     var currentUser: User? { get set }
 }
 

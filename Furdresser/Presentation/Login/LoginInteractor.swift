@@ -74,7 +74,7 @@ class LoginInteractor: LoginInteractorInput, LoginDataSource, LoginDataDestinati
                     self?.output?.setEmailError(message: message)
                     self?.output?.setPasswordError(message: message)
                 case .otherError:
-                    print("Other error")
+                    print("Other error: \(errorCode!)")
                 }
             }
         }

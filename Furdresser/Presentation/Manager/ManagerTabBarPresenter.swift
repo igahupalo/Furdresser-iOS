@@ -12,7 +12,7 @@ protocol ManagerTabBarPresenterInput {
     
 }
 
-protocol ManagerTabBarPresenterOutput: class {
+protocol ManagerTabBarPresenterOutput: AnyObject {
     
 }
 

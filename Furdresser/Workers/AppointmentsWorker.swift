@@ -10,25 +10,28 @@ import FirebaseFirestore
 import FirebaseStorage
 
 class AppointmentsWorker {
-    func fetchUserAppointments(uid: String, numberOfDaysInAdvance: Int, completionHandler: @escaping ([Appointment]?) -> ()) {
+    func fetchUserAppointments(uid: String, numberOfDaysInAdvance: Int? = nil, completionHandler: @escaping ([Appointment]?) -> ()) {
         let db: Firestore = Firestore.firestore()
         var appointments: [Appointment] = []
 
-        var dateComponent = DateComponents()
-        dateComponent.day = numberOfDaysInAdvance
-
         let currentDate = Timestamp(date: Date())
-//        let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate) ?? Date()
         let dispatchGroup = DispatchGroup()
+        let workerRef = db.document("Salons/\(Constants.salonId)/Workers/\(uid)")
 
-        let ref = db.collection("Salons")
+        var ref = db.collection("Salons")
             .document(Constants.salonId)
-            .collection("Workers")
-            .document(uid)
             .collection("Appointments")
+            .whereField("worker_ref", isEqualTo: workerRef)
             .whereField("is_active", isEqualTo: true)
             .whereField("time_start", isGreaterThanOrEqualTo: currentDate)
-        //            .whereField("date_start", isLessThanOrEqualTo: futureDate.timeIntervalSince1970)
+
+        if let numberOfDaysInAdvance = numberOfDaysInAdvance {
+            var dateComponent = DateComponents()
+            dateComponent.day = numberOfDaysInAdvance
+            let futureDate = Calendar.current.date(byAdding: dateComponent, to: Date()) ?? Date()
+
+            ref = ref.whereField("date_start", isLessThanOrEqualTo: futureDate.timeIntervalSince1970)
+        }
 
         ref.getDocuments { [weak self] documentSnapshots, error in
             guard error == nil else {
