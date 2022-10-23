@@ -218,7 +218,7 @@
 		42C351CE26545EC700BC0BC6 /* ReferencePhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencePhotosTableViewCell.swift; sourceTree = "<group>"; };
 		42C351D026559FC700BC0BC6 /* ReferencePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		42C351D42655BD6600BC0BC6 /* UINavigationBar+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Blur.swift"; sourceTree = "<group>"; };
-		42C351DB265BB9E900BC0BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		42C351DB265BB9E900BC0BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Furdresser/AppConfig/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		42CF151E26667CD100DE0D9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		42CF152026667CF700DE0D9A /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Start.strings; sourceTree = "<group>"; };
 		42CF152226667CF800DE0D9A /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -333,6 +333,7 @@
 		423724362639E83A00164970 /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
+				42C351DB265BB9E900BC0BC6 /* GoogleService-Info.plist */,
 				42D2ECBB26276D2900BE9C93 /* Info.plist */,
 				42D2ECAD26276D2300BE9C93 /* AppDelegate.swift */,
 				42D2ECAF26276D2300BE9C93 /* SceneDelegate.swift */,
@@ -587,7 +588,6 @@
 				4260FDC4265FF0900028310A /* Constants */,
 				4260FDA0265D8F1F0028310A /* Models */,
 				4260FD98265D871E0028310A /* Workers */,
-				42C351DB265BB9E900BC0BC6 /* GoogleService-Info.plist */,
 				42372462263A110D00164970 /* Common */,
 				423724372639E87500164970 /* Presentation */,
 				423724362639E83A00164970 /* AppConfig */,
