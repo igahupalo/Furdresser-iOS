@@ -13,7 +13,7 @@ The three modules are integrated and complement each other.
 
 ### Scheduling appointment via website
 
-https://user-images.githubusercontent.com/56322245/197543492-79fc7050-4e02-4d10-9f62-e8bac394b3ec.mov
+https://user-images.githubusercontent.com/56322245/197548948-12731aa3-686d-4093-87b8-beaccfec9e50.mov
 
 ## App Features
 
