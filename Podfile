@@ -26,15 +26,6 @@ target 'Furdresser' do
   ui_pods
 end
 
-target 'FurdresserTests' do
-  inherit! :search_paths
-  # Pods for testing
-end
-
-target 'FurdresserUITests' do
-  # Pods for testing
-end
-
 post_install do |installer|
   installer.pods_project.build_configurations.each do |config|
     config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
