@@ -1,5 +1,4 @@
-
-![Logo](/media/header.png)
+<img alt="header" src="https://user-images.githubusercontent.com/56322245/197549510-a9850dbe-fd6e-466b-be21-44fbd1ccb852.png">
 
 # FurDresser
 
