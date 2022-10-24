@@ -11,6 +11,9 @@ The aim of the FurDresser project is to provide a tool for grooming salons owner
 - an iOS application for groomers working at a salon enabling appointment menagement.
 The three modules are integrated and complement each other.
 
+### Scheduling appointment via website
+
+https://user-images.githubusercontent.com/56322245/197543492-79fc7050-4e02-4d10-9f62-e8bac394b3ec.mov
 
 ## App Features
 
@@ -30,12 +33,12 @@ The iOS application was designed with specification of groomer's responsibilitie
 - Firebase Database is used to authenticate users, store data and medias.
 - The app is **localized** and is available in two language versions - English (Base) and Polish.
 
-## How to run the app?
+## Running the App
 
-1. Clone this repo
-1. Open shell window and navigate to project folder
-1. Run `pod install`
-1. Open `Furdresser.xcworkspace` and run the project on selected device or simulator
+1. Clone this repository.
+1. Open shell window and navigate to project folder.
+1. Run `pod install`.
+1. Open `Furdresser.xcworkspace` and run the project on selected device or simulator.
 
 ## App Walkthrough
 
@@ -48,9 +51,11 @@ https://user-images.githubusercontent.com/56322245/197537898-b8540349-c039-49b9-
 
 ## Used third-party libraries
 - Firebase - https://cocoapods.org/pods/Firebase
-- JVFloatLabeledTextField - https://cocoapods.org/pods/JVFloatLabeledTextField
+- MaterialComponents - https://cocoapods.org/pods/MaterialComponents
 - IQKeyboardManagerSwift - https://cocoapods.org/pods/IQKeyboardManagerSwift
-- PhoneNumberKit - https://cocoapods.org/pods/PhoneNumberKit
 
 ## TODOs
-- [ ]
+- [ ] Appointment history
+- [ ] Profile settings
+- [ ] Cancelling appointments
+- [ ] Extract backend layer
