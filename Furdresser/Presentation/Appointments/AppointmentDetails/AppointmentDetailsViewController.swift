@@ -89,7 +89,9 @@ class AppointmentDetailsViewController: UIViewController, AppointmentDetailsView
         messageViewController.recipients = [viewModel.phoneNumber]
         messageViewController.messageComposeDelegate = self
 
-        present(messageViewController, animated: true, completion: nil)
+        if MFMessageComposeViewController.canSendText() {
+            present(messageViewController, animated: true, completion: nil)
+        }
     }
 
     func closeAppointmentDetails() {
