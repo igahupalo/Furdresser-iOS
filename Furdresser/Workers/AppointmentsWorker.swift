@@ -251,7 +251,6 @@ private extension AppointmentsWorker {
         let ownerName = data["owner_name"] as! String?
         let startDate = (data["time_start"] as! Timestamp?)?.dateValue()
         let endDate = (data["time_end"] as! Timestamp?)?.dateValue()
-        let workerRef = data["worker_ref"] as! DocumentReference?
 
         return Appointment(name: name,
                            age: age,

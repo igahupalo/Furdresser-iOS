@@ -6,12 +6,10 @@
 //
 
 import Foundation
-import FirebaseFirestore
 
 struct AppointmentDetails {
     var breed: String?
     var notes: String?
     var phoneNumber: String?
     var package: Package?
-    var workerRef: DocumentReference?
 }
