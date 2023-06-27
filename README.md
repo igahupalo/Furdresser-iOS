@@ -4,32 +4,32 @@
 
 This is FurDresser iOS application - a compound of our multiplatform FurDresser system. 
 
-The aim of the FurDresser project is to provide a tool for grooming salons owners, employees and clients. Project's goal is to simplify process of searching for local grooming salons, as well as scheduling appointments for pet owners. Moreover, it is supposed to facilitate communication between groomers and their customers. Project includes:
+The aim of the FurDresser project is to provide a tool for grooming salons owners, employees and clients. Project's goal is to simplify the process of searching for local grooming salons, as well as scheduling appointments for pet owners. Moreover, it is supposed to facilitate communication between groomers and their customers. Project includes:
 - a website for clients enabling browsing grooming salons and their offers, as well as scheduling appointments,
 - an Android application for grooming salons owners allowing menagement of employees and their schedules,
 - an iOS application for groomers working at a salon enabling appointment menagement.
 The three modules are integrated and complement each other.
 
-### Scheduling appointment via website
+### Scheduling appointment via the website
 
 https://user-images.githubusercontent.com/56322245/197548948-12731aa3-686d-4093-87b8-beaccfec9e50.mov
 
 ## App Features
 
-The iOS application was designed with specification of groomer's responsibilities in mind. The tool is supposed to simplify appointment menagement and communication with client. Therefore, the app includes following features:
+The iOS application was designed with a specification of a groomer's responsibilities in mind. The tool is supposed to simplify appointment management and communication with clients. Therefore, the app includes the following features:
 
 - [x] User authentication
 - [x] Browsing upcoming events
-- [x] Presenting appointment's details
+- [x] Presenting appointment details
 - [x] Sending messages with predefined content to clients
 - [x] Dialing clients
-- [x] Menaging a list of tasks realized during appointment accoring to its type 
+- [x] Menaging a list of tasks realized during appointment according to its type 
 
 ## Specification
 
-- The application is a native Swift software constructed with usage of **UIKit**.
+- The application is a native Swift software constructed with the usage of **UIKit**.
 - The **Clean Architecture** approach was used to organize app code.
-- Firebase Database is used to authenticate users, store data and medias.
+- Firebase Database is used to authenticate users, store data and media.
 - The app is **localized** and is available in two language versions - English (Base) and Polish.
 
 ## Running the App
@@ -57,9 +57,9 @@ https://user-images.githubusercontent.com/56322245/197537898-b8540349-c039-49b9-
 - [ ] Appointment history
 - [ ] Profile settings
 - [ ] Cancelling appointments
-- [ ] Extract backend layer
+- [ ] Extract the backend layer
 
 ## Credits
-The FurDresser project is developed in colaboration with:
+The FurDresser project is developed in collaboration with:
 - Kinga Gniedziejko - https://github.com/kingaGniedziejko
 - Jan Mielniczuk - https://github.com/mielniczukjan
