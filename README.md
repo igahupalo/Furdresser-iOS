@@ -2,7 +2,7 @@
 
 # FurDresser
 
-This is FurDresser iOS application - a compound of our multiplatform FurDresser system. 
+This is FurDresser iOS application - a part of our multiplatform FurDresser system. 
 
 The aim of the FurDresser project is to provide a tool for grooming salons owners, employees and clients. Project's goal is to simplify the process of searching for local grooming salons, as well as scheduling appointments for pet owners. Moreover, it is supposed to facilitate communication between groomers and their customers. Project includes:
 - a website for clients enabling browsing grooming salons and their offers, as well as scheduling appointments,
